@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_b18/asset_image.dart';
+import 'package:flutter_b18/login.dart';
 import 'image_network.dart';
 
 void main(){
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
  return MaterialApp(
-  home: AssetImageDemo(),
+  home: LoginView(),
  );
   }
 }
