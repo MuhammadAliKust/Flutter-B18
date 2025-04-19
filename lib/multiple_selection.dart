@@ -20,20 +20,30 @@ class _MultipleSelectionViewState extends State<MultipleSelectionView> {
           itemCount: 10,
           itemBuilder: (context, i) {
             return ListTile(
-              onTap: () {
-                if (selectedIndex.contains(i)) {
-                  selectedIndex.remove(i);
-                } else {
-                  selectedIndex.add(i);
-                }
-
-                setState(() {});
-              },
+              // onTap: () {
+              //
+              // },
               leading: Icon(Icons.notifications),
               title: Text("Selected Index $selectedIndex"),
               subtitle: Text("Loop Index $i"),
-              tileColor:
-                  selectedIndex.contains(i) ? Colors.green : Colors.white,
+              // tileColor:
+              //     selectedIndex.contains(i) ? Colors.green : Colors.white,
+              trailing: IconButton(
+                  onPressed: () {
+                    if (selectedIndex.contains(i)) {
+                      selectedIndex.remove(i);
+                    } else {
+                      selectedIndex.add(i);
+                    }
+
+                    setState(() {});
+                  },
+                  icon: Icon(
+                    selectedIndex.contains(i)
+                        ? Icons.favorite
+                        : Icons.favorite_border,
+                    color: selectedIndex.contains(i) ? Colors.red : Colors.grey,
+                  )),
             );
           }),
     );

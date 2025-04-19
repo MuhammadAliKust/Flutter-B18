@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_b18/asset_image.dart';
 import 'package:flutter_b18/list_view_demo.dart';
 import 'package:flutter_b18/login.dart';
+import 'package:flutter_b18/page_view.dart';
 import 'package:flutter_b18/single_selection.dart';
 import 'image_network.dart';
 import 'multiple_selection.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
  return MaterialApp(
-  home: MultipleSelectionView(),
+  home: PageViewDemo(),
  );
   }
 }
