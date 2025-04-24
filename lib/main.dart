@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_b18/asset_image.dart';
+import 'package:flutter_b18/grid_view_demo.dart';
 import 'package:flutter_b18/list_view_demo.dart';
 import 'package:flutter_b18/login.dart';
 import 'package:flutter_b18/page_view.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
  return MaterialApp(
-  home: PageViewDemo(),
+  home: GridViewDemo(),
  );
   }
 }
